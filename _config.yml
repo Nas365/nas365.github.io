@@ -4,13 +4,14 @@ theme: minima
 markdown: kramdown
 permalink: pretty
 
+# Keep header simple (Home only). We’ll use one rich landing page.
+header_pages: []
+
 minima:
   skin: classic
-  # Minima shows social links only if you add them here
   social_links:
     - { platform: github,   user_url: "https://github.com/Nas365" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/in/nasabu" }
 
-# plugins that work on GitHub Pages
 plugins:
   - jekyll-feed

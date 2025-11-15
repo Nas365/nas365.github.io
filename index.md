@@ -1,12 +1,12 @@
 ---
 layout: page
 title: Home
-# Live links
+# Live app links
 house_live:    https://new-london-house-price-pred.onrender.com
 loan_live:     https://loan-default-predictor-45986ae9d37b.herokuapp.com
 infl_live:     https://personal-inflation-impact.onrender.com
 grocery_live:  https://uk-grocery-app.onrender.com
-# Repo links (fill later if missing)
+# Repo links (fill when ready)
 house_repo:
 loan_repo:
 infl_repo:
@@ -27,6 +27,7 @@ h2 { margin-top:26px; }
 .btn + .btn { margin-left:8px; }
 </style>
 
+<!-- PROFILE (keep images exactly under assets/images/ ) -->
 <div class="hero">
   <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="Nasir Abubakar">
   <div>
@@ -52,81 +53,11 @@ h2 { margin-top:26px; }
 
 **Everyday Economics — a practical ML series**
 
-A 4-app story that mirrors real household decisions:  
-1) *Find a fair price* (regression) →  
-2) *Assess loan risk* (classification) →  
-3) *Forecast personal inflation* (ONS CPIH) →  
-4) *Shop smarter* (real retailer data: Tesco & Sainsbury’s)
-
----
-
-## Featured Projects
-
-<div class="grid">
-
-<div class="card">
-  <img src="{{ '/assets/images/p1_house.png' | relative_url }}" alt="London House Price Prediction">
-  <h3 style="margin:6px 0;">London House Price Prediction</h3>
-  <p class="small">
-  The journey starts with shelter: a regression app that estimates London property prices.  
-  <strong>Why:</strong> decide what’s a fair offer.  
-  <strong>ML:</strong> baseline regressors vs. <em>Random Forest</em> (final).  
-  <strong>Stack:</strong> Python, scikit-learn, pandas; Docker; AWS App Runner.
-  </p>
-  <p>
-    <a class="btn" href="{{ page.house_live }}" target="_blank">Live</a>
-    {% if page.house_repo %}<a class="btn" href="{{ page.house_repo }}" target="_blank">Code</a>{% else %}<span class="small">code coming soon</span>{% endif %}
-  </p>
-</div>
-
-<div class="card">
-  <img src="{{ '/assets/images/p2_loan.png' | relative_url }}" alt="Loan Default Predictor">
-  <h3 style="margin:6px 0;">Loan Default Predictor</h3>
-  <p class="small">
-  After pricing a home, you seek financing: a classification app a lender could use to gauge risk.  
-  <strong>Why:</strong> stress-test affordability and risk.  
-  <strong>ML:</strong> compared models; <em>XGBoost</em> selected.  
-  <strong>Stack:</strong> Streamlit; Docker; GitHub Actions; Heroku.
-  </p>
-  <p>
-    <a class="btn" href="{{ page.loan_live }}" target="_blank">Live</a>
-    {% if page.loan_repo %}<a class="btn" href="{{ page.loan_repo }}" target="_blank">Code</a>{% else %}<span class="small">code coming soon</span>{% endif %}
-  </p>
-</div>
-
-<div class="card">
-  <img src="{{ '/assets/images/p3_inflation.png' | relative_url }}" alt="Personal Inflation Impact (UK)">
-  <h3 style="margin:6px 0;">Personal Inflation Impact (UK)</h3>
-  <p class="small">
-  Right after the loan app, the ONS released CPIH data—so I built a tool to forecast a household’s personal inflation vs the national rate.  
-  <strong>Why:</strong> plan budgets when costs shift.  
-  <strong>ML:</strong> time-aware regression with <em>LightGBM</em>; risk flag vs CPIH.  
-  <strong>Data:</strong> <em>Official ONS CPIH</em>.  
-  <strong>Stack:</strong> FastAPI + NiceGUI; Render; CI/CD.
-  </p>
-  <p>
-    <a class="btn" href="{{ page.infl_live }}" target="_blank">Live</a>
-    {% if page.infl_repo %}<a class="btn" href="{{ page.infl_repo }}" target="_blank">Code</a>{% else %}<span class="small">code coming soon</span>{% endif %}
-  </p>
-</div>
-
-<div class="card">
-  <img src="{{ '/assets/images/p4_grocery.png' | relative_url }}" alt="UK Grocery Price Recommender">
-  <h3 style="margin:6px 0;">UK Grocery Price Recommender (Tesco vs Sainsbury’s)</h3>
-  <p class="small">
-  To spend smartly, I scraped real product listings from both retailers and recommend like-for-like cheaper options.  
-  <strong>Why:</strong> inflation-aware grocery choices.  
-  <strong>ML:</strong> TF-IDF + cosine similarity; KMeans clusters; price rules.  
-  <strong>Data:</strong> <em>Real pages scraped from retailer sites</em>.  
-  <strong>Stack:</strong> FastAPI + Jinja; Render; CI/CD.
-  </p>
-  <p>
-    <a class="btn" href="{{ page.grocery_live }}" target="_blank">Live</a>
-    {% if page.grocery_repo %}<a class="btn" href="{{ page.grocery_repo }}" target="_blank">Code</a>{% else %}<span class="small">code coming soon</span>{% endif %}
-  </p>
-</div>
-
-</div>
+A four-app story mirroring real decisions:
+1) **Find a fair price** (regression) →  
+2) **Assess loan risk** (classification) →  
+3) **Forecast personal inflation** (official ONS CPIH) →  
+4) **Shop smarter** (real Tesco & Sainsbury’s product data).
 
 ---
 
@@ -141,9 +72,74 @@ DataCamp — Associate Data Analyst in SQL (2024) ·
 IBM — Data Analytics with Excel & R (2024) ·  
 IBM — Introduction to Data Analytics (2024).
 
-**Experience highlights.** Head of Business Intelligence (Placement), KCTA — streamlined data-driven ops and licence registry improvements ·  
-Department of Finance (Placement), Kaduna State Gov — budget analysis and internal audit support ·  
-Research Assistant, CSEA — data collection & policy research analytics.
+**Experience highlights.** Head of Business Intelligence (Placement), KCTA — streamlined data-driven ops & licence registry improvements ·  
+Department of Finance (Placement), Kaduna State Gov — budget analysis & internal audit support ·  
+Research Assistant, CSEA — data & policy research analytics.
+
+---
+
+## Featured Projects
+
+<div class="grid">
+
+<div class="card">
+  <img src="{{ '/assets/images/p1_house.jpg' | relative_url }}" alt="London House Price Prediction">
+  <h3 style="margin:6px 0;">London House Price Prediction</h3>
+  <p class="small">
+  The journey starts with shelter: a regression app that estimates London property prices.<br>
+  <strong>ML:</strong> baselines vs <em>Random Forest</em> (final).  
+  <strong>Stack:</strong> Python, scikit-learn, pandas; Docker; AWS App Runner.
+  </p>
+  <p>
+    <a class="btn" href="{{ page.house_live }}" target="_blank">Live</a>
+    {% if page.house_repo %}<a class="btn" href="{{ page.house_repo }}" target="_blank">Code</a>{% else %}<span class="small">code coming soon</span>{% endif %}
+  </p>
+</div>
+
+<div class="card">
+  <img src="{{ '/assets/images/p2_loan.jpg' | relative_url }}" alt="Loan Default Predictor">
+  <h3 style="margin:6px 0;">Loan Default Predictor</h3>
+  <p class="small">
+  After pricing a home, you seek financing: a classification app a lender could use to gauge risk.  
+  <strong>ML:</strong> compared models; <em>XGBoost</em> selected.  
+  <strong>Stack:</strong> Streamlit; Docker; GitHub Actions; Heroku.
+  </p>
+  <p>
+    <a class="btn" href="{{ page.loan_live }}" target="_blank">Live</a>
+    {% if page.loan_repo %}<a class="btn" href="{{ page.loan_repo }}" target="_blank">Code</a>{% else %}<span class="small">code coming soon</span>{% endif %}
+  </p>
+</div>
+
+<div class="card">
+  <img src="{{ '/assets/images/p3_inflation.jpg' | relative_url }}" alt="Personal Inflation Impact (UK)">
+  <h3 style="margin:6px 0;">Personal Inflation Impact (UK)</h3>
+  <p class="small">
+  The day after the loan app, the ONS released CPIH data—so I built a tool to forecast a household’s personal inflation vs the national rate.  
+  <strong>ML:</strong> time-aware regression with <em>LightGBM</em>; risk flag vs CPIH.  
+  <strong>Data:</strong> <em>Official ONS CPIH</em>.  
+  <strong>Stack:</strong> FastAPI + NiceGUI; Render; CI/CD.
+  </p>
+  <p>
+    <a class="btn" href="{{ page.infl_live }}" target="_blank">Live</a>
+    {% if page.infl_repo %}<a class="btn" href="{{ page.infl_repo }}" target="_blank">Code</a>{% else %}<span class="small">code coming soon</span>{% endif %}
+  </p>
+</div>
+
+<div class="card">
+  <img src="{{ '/assets/images/p4_grocery.jpg' | relative_url }}" alt="UK Grocery Price Recommender">
+  <h3 style="margin:6px 0;">UK Grocery Price Recommender</h3>
+  <p class="small">
+  To spend smartly, I scraped real product listings from Tesco and Sainsbury’s and recommend like-for-like cheaper options.  
+  <strong>ML:</strong> TF-IDF + cosine similarity; KMeans clusters; price rules.  
+  <strong>Stack:</strong> FastAPI + Jinja; Render; CI/CD.
+  </p>
+  <p>
+    <a class="btn" href="{{ page.grocery_live }}" target="_blank">Live</a>
+    {% if page.grocery_repo %}<a class="btn" href="{{ page.grocery_repo }}" target="_blank">Code</a>{% else %}<span class="small">code coming soon</span>{% endif %}
+  </p>
+</div>
+
+</div>
 
 ---
 
