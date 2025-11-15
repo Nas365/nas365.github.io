@@ -1,11 +1,16 @@
-title: "Nasir Abubakar"
-description: "Everyday Economics — applied data science projects"
-theme: jekyll-theme-cayman
-# allow Jekyll to pick up files in _includes/
-include:
-  - _includes
+title: Nasir Abubakar
+description: Everyday Economics — applied data science projects
+theme: minima
 markdown: kramdown
-kramdown:
-  input: GFM
-  hard_wrap: false
-plugins: []
+permalink: pretty
+
+minima:
+  skin: classic
+  # Minima shows social links only if you add them here
+  social_links:
+    - { platform: github,   user_url: "https://github.com/Nas365" }
+    - { platform: linkedin, user_url: "https://www.linkedin.com/in/nasabu" }
+
+# plugins that work on GitHub Pages
+plugins:
+  - jekyll-feed
