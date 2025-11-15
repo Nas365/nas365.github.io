@@ -1,0 +1,11 @@
+title: "Nasir Abubakar"
+description: "Everyday Economics — applied data science projects"
+theme: jekyll-theme-cayman
+# allow Jekyll to pick up files in _includes/
+include:
+  - _includes
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+plugins: []
