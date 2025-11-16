@@ -1,11 +1,14 @@
 ---
-layout: default
-title: UK Grocery Recommender
+layout: page
+title: UK Grocery Price Recommender (Tesco vs Sainsbury’s)
 ---
 
-{% include nav.md %}
-<link rel="stylesheet" href="/assets/style.css">
+![UK Grocery Price Recommender](/assets/images/p4_grocery.jpg)
 
-# UK Grocery Recommender
-Real Tesco & Sainsbury’s listings; similarity + price rules; FastAPI + Jinja; Render.  
-**Live:** https://uk-grocery-app.onrender.com · **Code:** https://github.com/Nas365/uk-grocery-app
+**Goal.** Recommend like-for-like cheaper options across Tesco and Sainsbury’s.  
+**Data.** Real product listings scraped from retailer sites.  
+**ML.** TF-IDF + cosine similarity; KMeans clusters; price rules.  
+**Stack.** FastAPI + Jinja; Render; CI/CD.
+
+**Live app:** <a href="https://uk-grocery-app.onrender.com" target="_blank">Open</a>  
+**Code:** <a href="https://github.com/Nas365/uk-grocery-app" target="_blank">Repository</a>

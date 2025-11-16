@@ -1,11 +1,14 @@
 ---
-layout: default
+layout: page
 title: Personal Inflation Impact (UK)
 ---
 
-{% include nav.md %}
-<link rel="stylesheet" href="/assets/style.css">
+![Personal Inflation Impact](/assets/images/p3_inflation.jpg)
 
-# Personal Inflation Impact (UK)
-LightGBM short-horizon forecast using **ONS CPIH** divisional indices; FastAPI + NiceGUI; Render.  
-**Live:** https://personal-inflation-impact.onrender.com/ · **Code:** PUT_YOUR_PERSONAL_INFLATION_REPO_URL
+**Goal.** Forecast a household’s personal inflation vs national CPIH.  
+**Data.** Official **ONS CPIH**.  
+**ML.** Time-aware regression with **LightGBM**; risk flag vs CPIH.  
+**Stack.** FastAPI + NiceGUI; Render; CI/CD.
+
+**Live app:** <a href="https://personal-inflation-impact.onrender.com" target="_blank">Open</a>  
+**Code:** <a href="https://github.com/Nas365/personal-inflation-impact" target="_blank">Repository</a>

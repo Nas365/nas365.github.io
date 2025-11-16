@@ -7,9 +7,9 @@ loan_live:     https://loan-default-predictor-45986ae9d37b.herokuapp.com
 infl_live:     https://personal-inflation-impact.onrender.com
 grocery_live:  https://uk-grocery-app.onrender.com
 # Repo links (fill when ready)
-house_repo:
-loan_repo:
-infl_repo:
+house_repo:  https://github.com/Nas365/New_London_House_Price_Pred
+loan_repo:  https://github.com/Nas365/loan-default-predictor
+infl_repo:  https://github.com/Nas365/personal-inflation-impact
 grocery_repo:  https://github.com/Nas365/uk-grocery-app
 ---
 
@@ -58,6 +58,7 @@ h2 { margin-top:26px; }
       <span class="badge">CI/CD (GitHub Actions)</span>
       <span class="badge">Render / AWS</span>
       <span class="badge">Git</span>
+      <span class="badge">R</span>
       <span class="badge">Econometrics</span>
     </div>
   </div>
@@ -67,7 +68,7 @@ h2 { margin-top:26px; }
 
 ## Background snapshot
 
-**About.** Data scientist with an economics background, focused on turning real-world problems into simple, usable apps. I care about clean data pipelines, clear UX, and deployable ML.
+**About.** Data scientist with an economics background, focused on turning real-world problems into practical ML solutions that solve real-world problems.
 
 **Education.**  
 • **MSc, International Economics, Finance & Development (Merit)** — University of Surrey (2020–2021)  
@@ -83,11 +84,11 @@ h2 { margin-top:26px; }
 
 **Experience highlights.**  
 • **Head of Business Intelligence (Placement)**, *Kaduna Capital Territory Authority (KCTA)* — Mar 2022–Jun 2022  
-  Streamlined data-driven ops; improved licence registry processes; supported performance dashboards.  
+  Streamlined data-driven operations, improved licence registry accuracy, built dashboards for real-time decision-making, and automated reporting pipelines that reduced processing time by 70%.  
 • **Department of Finance (Placement), Kaduna State Government** — 2022  
   Budget analysis and reporting; supported implementation tracking.  
-• **Research Assistant**, *Centre for the Study of the Economies of Africa (CSEA)* — Aug 2017–Jul 2018  
-  Data collection/cleaning, literature support, and policy research assistance.
+• **Research Assistant (Youth Servive)**, *Centre for the Study of the Economies of Africa (CSEA)* — Aug 2017–Jul 2018  
+  Collected and cleaned macroeconomic datasets, literature support, and policy research assistance.
 
 ---
 
@@ -99,9 +100,9 @@ h2 { margin-top:26px; }
   <img src="{{ '/assets/images/p1_house.jpg' | relative_url }}" alt="London House Price Prediction">
   <h3 style="margin:6px 0;">1) London House Price Prediction</h3>
   <p class="small">
-    The story begins with shelter: a regression app estimating fair London property prices.  
-    <strong>ML:</strong> baselines vs <em>Random Forest</em> (final).  
-    <strong>Stack:</strong> Python, scikit-learn, pandas; Docker; AWS App Runner.
+    The story begins with shelter: My first end-to-end ML project that estimates fair market prices for London properties using over 200 k records (Kaggle).
+    <strong>ML:</strong> XGBoost Regressor (outperformed LightGBM & Random Forest).  
+    <strong>Stack:</strong> Python, scikit-learn, pandas, Flask; deployed on Render.
   </p>
   <p class="cta">
     <a class="btn" href="{{ page.house_live }}" target="_blank">Live</a>
@@ -113,7 +114,8 @@ h2 { margin-top:26px; }
   <img src="{{ '/assets/images/p2_loan.jpg' | relative_url }}" alt="Loan Default Predictor">
   <h3 style="margin:6px 0;">2) Loan Default Predictor</h3>
   <p class="small">
-    After pricing a home comes financing: a lender-style classifier for default risk.  
+    While the first app was a regression problem, this one is a classification problem. Imagine using my first app to estimate the price of a house, and then approaching the bank for a loan. The bank could now use this app to decide whether you are likely to default on that loan or not.
+    The project uses the Kaggle “Give Me Some Credit” dataset, features XGBoost as the final model, and has been built with Streamlit, containerized with Docker, and deployed on Heroku using GitHub Actions for CI/CD.
     <strong>ML:</strong> compared models; <em>XGBoost</em> selected.  
     <strong>Stack:</strong> Streamlit; Docker; GitHub Actions; Heroku.
   </p>
@@ -127,7 +129,13 @@ h2 { margin-top:26px; }
   <img src="{{ '/assets/images/p3_inflation.jpg' | relative_url }}" alt="Personal Inflation Impact (UK)">
   <h3 style="margin:6px 0;">3) Personal Inflation Impact (UK)</h3>
   <p class="small">
-    The day after project #2, the <em>ONS</em> released new CPIH data—so I built a tool to forecast a household’s personal inflation vs the national rate.  
+    While the first project focused on predicting property prices across London and the second explored the likelihood of loan default, this new work extends the economic journey to the next stage — managing the cost of living once financial commitments like a mortgage are in place.
+
+    After the Office for National Statistics (ONS) published its CPIH data on 17 September 2025, I became curious about how inflation affects people differently. As an Economist and Data Scientist, I wanted to understand the gap between the national inflation rate and what households actually experience in daily life.
+
+    Inflation is often presented as a single national figure, but each household faces a unique mix of rising costs — food, housing, transport, health, and more. This project bridges that gap by estimating a household’s personal inflation rate and comparing it with the national average, helping users see whether their living costs rise faster or slower than the economy overall.
+    The app uses official ONS CPIH data, allowing users to adjust their spending mix through sliders to reflect their household budget. It predicts the 3-month forward personal inflation rate and flags whether inflation risk is high or low relative to the national CPIH.
+    Technically, it was built in Python using pandas, scikit-learn, and LightGBM, integrated into a unified FastAPI + NiceGUI interface. Deployment was automated via GitHub Actions and hosted on Render, following the same CI/CD principles used in earlier projects. The dataset comes directly from the Office for National Statistics CPIH Divisional Index, ensuring accuracy and credibility.
     <strong>Data:</strong> official <em>ONS CPIH</em>.  
     <strong>ML:</strong> time-aware regression with <em>LightGBM</em>; risk flag vs CPIH.  
     <strong>Stack:</strong> FastAPI + NiceGUI; Render; CI/CD.
@@ -142,7 +150,11 @@ h2 { margin-top:26px; }
   <img src="{{ '/assets/images/p4_grocery.jpg' | relative_url }}" alt="UK Grocery Price Recommender">
   <h3 style="margin:6px 0;">4) UK Grocery Price Recommender (Tesco vs Sainsbury’s)</h3>
   <p class="small">
-    To spend smartly, I scraped real product listings from the retailers and recommend like-for-like cheaper options.  
+    After using the previous Machine Learning App to assess how I am personally going to be affected by inflation, the next question is how do I spend smarter on food now? 
+    
+    To spend smartly, I scraped real product listings from Tesco & Sainsbury’s (captured Nov 2025) and built an app that finds cheaper, similar alternatives across both retailers. Choose a category (pasta, cereals, cooking oil, rice, tinned tomatoes), optionally pick a brand and size, and the app shows where it’s cheaper and the % saving.
+
+    Under the hood (brief): TF-IDF on product names → KMeans clusters for comparable SKUs → cosine similarity for look-alikes → price normalisation (per kg/L), size filters, and “cheapest retailer” logic. Served via FastAPI with GitHub Actions CI/CD and deployed on Render.
     <strong>ML:</strong> TF-IDF + cosine similarity, KMeans clusters, price rules.  
     <strong>Stack:</strong> FastAPI + Jinja; Render; CI/CD.
   </p>
