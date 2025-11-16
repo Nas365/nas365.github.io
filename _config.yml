@@ -4,7 +4,7 @@ theme: minima
 markdown: kramdown
 permalink: pretty
 
-# Keep header simple (Home only). We’ll use one rich landing page.
+# No header menu – we build one hero landing instead
 header_pages: []
 
 minima:
