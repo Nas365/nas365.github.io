@@ -68,31 +68,40 @@ h2 { margin-top:26px; }
 
 ## Background snapshot
 
-**About.** Data scientist with an economics background, focused on turning real-world problems into practical ML solutions that solve real-world problems.
+**About.** Data Scientist with an Economics background, focused on turning real-world problems into practical ML solutions that solve real-world problems.
 
-**Education.**  
-• **MSc, International Economics, Finance & Development (Merit)** — University  of Surrey (2020–2021)  
-• **MBA, Foreign Trade Management (A Grade)** — NIBM Global (2020–2021)  
-• **BSc, Economics (First Class)** — Bauchi State University (2013–2017)
+## Education
+• MSc, International Economics, Finance & Development (Merit) — *University  of Surrey* (2020–2021)  
+• MBA, Foreign Trade Management (A Grade) — *NIBM Global* (2020–2021)  
+• BSc, Economics (First Class) — *Bauchi State University* (2013–2017)
 
-• **Awards**
-• Undergraduate — **Student of the Year** (2017)
-• Government Award — **Merit-Based Scholarship for Masters Degree** (2020)
+## Awards
+• Undergraduate — *Student of the Year* (2017)
+• Government Award — *Merit-Based Scholarship for Masters Degree* (2020)
 
-**Certifications.**  
-• DataCamp — **Associate Data Scientist in Python** (2025)  
-• DataCamp — **Associate Data Analyst in SQL** (2024)  
-• DataCamp — **Data Analyst in Python** (2024)  
-• IBM — **Data Analytics with Excel & R** (2024)  
-• IBM — **Introduction to Data Analytics** (2024)
+## Certifications  
+• DataCamp — *Associate Data Scientist in Python* (2025)  
+• DataCamp — *Associate Data Analyst in SQL* (2024)  
+• DataCamp — *Data Analyst in Python* (2024)  
+• IBM — *Data Analytics with Excel & R* (2024)  
+• IBM — *Introduction to Data Analytics* (2024)
 
-**Experience highlights.**  
+## Experience highlights.
 • **Head of Business Intelligence (Placement)**, *Kaduna Capital Territory Authority (KCTA)* — Mar 2022–Jun 2022  
-  Streamlined data-driven operations, improved licence registry accuracy, built dashboards for real-time decision-making, and automated reporting pipelines that reduced processing time by 70%.  
+• Enforced environmental compliance and coordinated waste management to improve urban cleanliness.
+• Helped divide the city into operational lots, streamlining waste collection and boosting efficiency.
+• Led business licence registrations, strengthening the state’s commercial database and supporting record IGR growth (₦62.48bn in 2023; ₦14.16bn in Jan–Feb 2025).
+• Contributed to the Kaduna City Resilience Project, enhancing the city’s environmental and economic resilience.  
+
 • **Department of Finance (Placement), Kaduna State Government** — 2022  
-  Budget analysis and reporting; supported implementation tracking.  
+• Assisted with data entry, policy research, and financial records reconciliation.
+•Supported the analysis of budget implementation reports and helped prepare documentation for internal audits.
+•Worked alongside senior officers to gain practical exposure to public financial management and government accounting systems.
+
 • **Research Assistant (Youth Servive)**, *Centre for the Study of the Economies of Africa (CSEA)* — Aug 2017–Jul 2018  
-  Collected and cleaned macroeconomic datasets, literature support, and policy research assistance.
+• Performed crucial data-related tasks to support CSEA’s research programs.
+• Conducted literature reviews to support senior researchers in building contextual understanding of development topics
+• Carried out administrative and operational tasks as needed to support the research team and Director
 
 ---
 
